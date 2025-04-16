@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ExampleWorkerServiceTwo\ExampleWorkerServiceTwo.csproj" />
     <ProjectReference Include="..\ExampleWorkerService\ExampleWorkerService.csproj" />
   </ItemGroup>
 
