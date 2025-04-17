@@ -11,6 +11,7 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["ExampleWorkerServiceTwo/ExampleWorkerServiceTwo.csproj", "ExampleWorkerServiceTwo/"]
+COPY ["ExampleWorkerService.ServiceDefaults/ExampleWorkerService.ServiceDefaults.csproj", "ExampleWorkerService.ServiceDefaults/"]
 RUN dotnet restore "./ExampleWorkerServiceTwo/ExampleWorkerServiceTwo.csproj"
 COPY . .
 WORKDIR "/src/ExampleWorkerServiceTwo"
